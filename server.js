@@ -1,5 +1,6 @@
 var express = require('express');
 
+
 // Initialize the app and create a port
 var app = express();
 var PORT = process.env.PORT || 3000;
@@ -9,8 +10,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+require('./routing/apiRoutes')(app);
+require('./routing/htmlRoutes')(app);
 
 // Start the server on the port
 app.listen(PORT, function() {
