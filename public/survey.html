@@ -23,6 +23,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
 
   <body>
@@ -30,7 +31,7 @@
       <h2>Survey Questions</h2>
       <hr />
 
-      <h3><strong>About You</strong></h3>
+      <h3><strong>Tell us a little about you!</strong></h3>
       <h4>Name (Required)</h4>
       <input type="text" id="name" class="form-control" required="" />
 
@@ -40,7 +41,7 @@
       <hr />
 
       <h3><strong>Question 1</strong></h3>
-      <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+      <h4>You enjoy spending your time around large groups.</h4>
       <select class="chosen-select" id="q1">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -52,8 +53,7 @@
 
       <h3><strong>Question 2</strong></h3>
       <h4>
-        Generally speaking, you rely more on your experience than your
-        imagination.
+        You love being outdoors.
       </h4>
       <select class="chosen-select" id="q2">
         <option value=""></option>
@@ -66,8 +66,7 @@
 
       <h3><strong>Question 3</strong></h3>
       <h4>
-        You find it easy to stay relaxed and focused even when there is some
-        pressure.
+        You tend to be more laid back in most situations.
       </h4>
       <select class="chosen-select" id="q3">
         <option value=""></option>
@@ -140,8 +139,7 @@
 
       <h3><strong>Question 9</strong></h3>
       <h4>
-        You think that everyone’s views should be respected regardless of
-        whether they are supported by facts or not.
+        You see yourself as the star of the show.
       </h4>
       <select class="chosen-select" id="q9">
         <option value=""></option>
@@ -259,7 +257,7 @@
 
         // If all required fields are filled
         if (validateForm()) {
-          // Create an object for the user"s data
+          // Creates an object for the user"s data
           var userData = {
             name: $("#name").val(),
             photo: $("#photo").val(),
